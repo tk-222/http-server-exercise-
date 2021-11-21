@@ -4,6 +4,13 @@
   <head>
     <title>HTML</title>
   </head>
+  <script>
+  function clickHandler() {
+    const box = document.getElementById("box");
+    const p = document.createElement("p");
+    p.innerText = "Added by JS";
+  }
+</script>
   <body>
     <h1>Hello HTML</h1>
     <p>
@@ -12,5 +19,7 @@
 HTML
 </a>.
     </p>
+    <button onclick="clickHandler()">JS</button>
+  <div id="box"></div>
   </body>
 </html>
